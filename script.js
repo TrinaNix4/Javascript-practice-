@@ -77,14 +77,23 @@
 // mulitple
 // lines`);
 
-const age = 15;
-const isOldEnough = age >= 18;
+// const age = 15;
+// const isOldEnough = age >= 18;
 
-if (age >= 18) {
-  console.log("Sarah can start driving! 🚗");
+// if (age >= 18) {
+//   console.log("Sarah can start driving! 🚗");
+// } else {
+//   const yearsLeft = 18 - age;
+//   console.log(
+//     `Sarah is not old enough to drive! Wait another ${yearsLeft} years 🚫`
+//   );
+// }
+const birthYear = 1999;
+
+let century;
+if (birthYear <= 2000) {
+  century = 20;
 } else {
-  const yearsLeft = 18 - age;
-  console.log(
-    `Sarah is not old enough to drive! Wait another ${yearsLeft} years 🚫`
-  );
+  century = 21;
 }
+console.log(`You were born in the ${century} th/st century!`);
