@@ -56,17 +56,35 @@
 // console.log(markBMI2);
 // console.log(johnBMI2);
 
-const firstName = "Trina";
-const job = "student";
-const birthYear = 1982;
-const year = 2022;
+// const firstName = "Trina";
+// const job = "student";
+// const birthYear = 1982;
+// const year = 2022;
 
-const trina =
-  "I'm " + firstName + ", a" + (year - birthYear) + "years old" + job + "!";
-console.log(trina);
+// const trina =
+//   "I'm " + firstName + ", a" + (year - birthYear) + "years old" + job + "!";
+// console.log(trina);
 
-//template literal make the above easier
-//interpolation
+// //template literal make the above easier
+// //interpolation
 
-const trinaNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
-console.log(trinaNew);
+// const trinaNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+// console.log(trinaNew);
+
+// console.log(`can use backticks for any regular string`);
+// console.log(`string
+// with
+// mulitple
+// lines`);
+
+const age = 15;
+const isOldEnough = age >= 18;
+
+if (age >= 18) {
+  console.log("Sarah can start driving! 🚗");
+} else {
+  const yearsLeft = 18 - age;
+  console.log(
+    `Sarah is not old enough to drive! Wait another ${yearsLeft} years 🚫`
+  );
+}
