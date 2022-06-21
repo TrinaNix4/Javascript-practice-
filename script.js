@@ -137,3 +137,8 @@ if (markBMI2 > johnBMI2) {
 const inputYear = "1991";
 console.log(Number(inputYear), inputYear);
 console.log(Number(inputYear) + 18);
+
+//type coercion
+console.log("I am " + 23 + " years old");
+//string, number, string
+//in above example, number will be convertd to string; + operator will convernt number to string
