@@ -88,12 +88,45 @@
 //     `Sarah is not old enough to drive! Wait another ${yearsLeft} years 🚫`
 //   );
 // }
-const birthYear = 1999;
+// const birthYear = 1999;
 
-let century;
-if (birthYear <= 2000) {
-  century = 20;
+// let century;
+// if (birthYear <= 2000) {
+//   century = 20;
+// } else {
+//   century = 21;
+// }
+// console.log(`You were born in the ${century} th/st century!`);
+
+const markHeight1 = 1.69;
+const markMass1 = 78;
+
+const johnHeight1 = 1.95;
+const johnMass1 = 92;
+
+const markHeight2 = 1.88;
+const markMass2 = 95;
+
+const johnHeight2 = 1.76;
+const johnMass2 = 85;
+
+const markBMI1 = markMass1 / (markHeight1 * markHeight1);
+
+const johnBMI1 = johnMass1 / (johnHeight1 * johnHeight1);
+
+const markBMI2 = markMass2 / (markHeight2 * markHeight2);
+
+const johnBMI2 = johnMass2 / (johnHeight2 * johnHeight2);
+const markHigherBMI = markBMI1 > johnBMI1;
+
+console.log(markBMI1);
+console.log(johnBMI1);
+// console.log(markBMI2);
+// console.log(johnBMI2);
+// console.log(markHigherBMI);
+
+if (markBMI2 > johnBMI2) {
+  console.log(`Mark's BMI (${markBMI1}) is higher than Johns!`);
 } else {
-  century = 21;
+  console.log(`Johns (${johnBMI1}) BMI is higher than Marks!`);
 }
-console.log(`You were born in the ${century} th/st century!`);
