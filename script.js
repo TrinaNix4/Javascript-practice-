@@ -134,41 +134,41 @@ if (markBMI2 > johnBMI2) {
 //converting a string from user input into a number
 //for calculations
 
-const inputYear = "1991";
-console.log(Number(inputYear), inputYear);
-console.log(Number(inputYear) + 18);
+// const inputYear = "1991";
+// console.log(Number(inputYear), inputYear);
+// console.log(Number(inputYear) + 18);
 
 //type coercion
-console.log("I am " + 23 + " years old");
+// console.log("I am " + 23 + " years old");
 //string, number, string
 //in above example, number will be convertd to string; + operator will convernt number to string
 
 //JS will convert strings to numbers when using the minus operator
 
-console.log("12" - "10" - 3);
-console.log("23" * "2");
+// console.log("12" - "10" - 3);
+// console.log("23" * "2");
 //will convert from strings to numbers
 
 //equality operators
-const age = 18;
-if (age === 18) console.log("you just became an adult");
+// const age = 18;
+// if (age === 18) console.log("you just became an adult");
 // always use strict equality operator === JS does not perform type coercion on this
 // avoid loose equality operator == JS does perform type coercion  so '19' == 19
 //would be true
 
-const favorite = Number(prompt("Guess the number between 1-30."));
-console.log(typeof favorite);
-if (favorite === 23) {
-  console.log("You guessed it!");
-} else if (favorite === 7) {
-  console.log("You guessed it!");
-} else {
-  console.log("Sorry. Try again.");
-}
+// const favorite = Number(prompt("Guess the number between 1-30."));
+// console.log(typeof favorite);
+// if (favorite === 23) {
+//   console.log("You guessed it!");
+// } else if (favorite === 7) {
+//   console.log("You guessed it!");
+// } else {
+//   console.log("Sorry. Try again.");
+// }
 
-if (favorite !== 23) {
-  console.log("Try number 23.");
-}
+// if (favorite !== 23) {
+//   console.log("Try number 23.");
+// }
 
 //boolean logic; AND OR and NOT operators
 // AND operator returns true only if A and B are both true
@@ -178,7 +178,7 @@ if (favorite !== 23) {
 
 //NOT operator; acts on only one boolean value and inverts it. so if A is true, it will become false.
 
-age = 16;
+// age = 16;
 
 //A variable  age is great or equal to 20 (false)
 // B variable agee is less than 30 (true)
@@ -197,3 +197,22 @@ age = 16;
 
 //A or !B (false and false)
 //result is false
+
+const hasDriversLicense = true; //A
+const hasGoodVision = true; //B
+
+console.log(hasDriversLicense && hasGoodVision); //returns true because A and B are both true
+
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+
+if (hasDriversLicense && hasGoodVision) {
+  console.log("Sarah is able to drive");
+} else {
+  console.log("Sarah is not allowed to drive");
+}
+
+isTired = true; //variable C
+console.log(hasDriversLicense || hasGoodVision || isTired);
