@@ -169,3 +169,31 @@ if (favorite === 23) {
 if (favorite !== 23) {
   console.log("Try number 23.");
 }
+
+//boolean logic; AND OR and NOT operators
+// AND operator returns true only if A and B are both true
+// if either A or B are false, then A and B will be false
+
+//OR operator; true if either A or B variables is true;
+
+//NOT operator; acts on only one boolean value and inverts it. so if A is true, it will become false.
+
+age = 16;
+
+//A variable  age is great or equal to 20 (false)
+// B variable agee is less than 30 (true)
+
+//!A (false)
+//so result of !A is true
+
+//A AND B (false and true)
+//result is false
+
+//A OR B (false or true)
+//result is TRue since one variable is true
+
+//!A AND B (true and true)
+//result is true
+
+//A or !B (false and false)
+//result is false
