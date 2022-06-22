@@ -198,33 +198,58 @@ if (markBMI2 > johnBMI2) {
 //A or !B (false and false)
 //result is false
 
-const hasDriversLicense = true; //A
-const hasGoodVision = true; //B
+// const hasDriversLicense = true; //A
+// const hasGoodVision = true; //B
 
-console.log(hasDriversLicense && hasGoodVision); //returns true because A and B are both true
+// console.log(hasDriversLicense && hasGoodVision); //returns true because A and B are both true
 
-console.log(hasDriversLicense || hasGoodVision);
-console.log(!hasDriversLicense);
+// console.log(hasDriversLicense || hasGoodVision);
+// console.log(!hasDriversLicense);
 
-const shouldDrive = hasDriversLicense && hasGoodVision;
+// const shouldDrive = hasDriversLicense && hasGoodVision;
 
-if (hasDriversLicense && hasGoodVision) {
-  console.log("Sarah is able to drive");
-} else {
-  console.log("Sarah is not allowed to drive");
-}
+// if (hasDriversLicense && hasGoodVision) {
+//   console.log("Sarah is able to drive");
+// } else {
+//   console.log("Sarah is not allowed to drive");
+// }
 
-isTired = true; //variable C
-console.log(hasDriversLicense || hasGoodVision || isTired);
+// isTired = true; //variable C
+// console.log(hasDriversLicense || hasGoodVision || isTired);
 
-const scoreDolphins = (96 + 108 + 89) / 3;
-const scoreKoalas = (88 + 91 + 110) / 3;
-console.log(scoreKoalas, scoreDolphins);
+// const scoreDolphins = (96 + 108 + 89) / 3;
+// const scoreKoalas = (88 + 91 + 110) / 3;
+// console.log(scoreKoalas, scoreDolphins);
 
-if (scoreDolphins > scoreKoalas) {
-  console.log("Dolphins win the trophy!");
-} else if (scoreKoalas > scoreDolphins) {
-  console.log("Koalas win the trophy!");
-} else if (scoreDolphins === scoreKoalas) {
-  console.log("Both win the trophy!");
+// if (scoreDolphins > scoreKoalas) {
+//   console.log("Dolphins win the trophy!");
+// } else if (scoreKoalas > scoreDolphins) {
+//   console.log("Koalas win the trophy!");
+// } else if (scoreDolphins === scoreKoalas) {
+//   console.log("Both win the trophy!");
+// }
+
+const day = "saturday";
+
+switch (day) {
+  case "monday":
+    console.log("Plan course structure");
+    console.log("Go to coding meetup");
+    break;
+  case "tuesday":
+    console.log("Prepare theory videos");
+    break;
+  case "wednesday":
+  case "thursday":
+    console.log("Write code examples");
+    break;
+  case "friday":
+    console.log("record videos");
+    break;
+  case "saturday":
+  case "sunday":
+    console.log("enjoy weekend");
+    break;
+  default:
+    console.log("not a valid day");
 }
