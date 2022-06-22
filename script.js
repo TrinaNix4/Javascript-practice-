@@ -142,3 +142,30 @@ console.log(Number(inputYear) + 18);
 console.log("I am " + 23 + " years old");
 //string, number, string
 //in above example, number will be convertd to string; + operator will convernt number to string
+
+//JS will convert strings to numbers when using the minus operator
+
+console.log("12" - "10" - 3);
+console.log("23" * "2");
+//will convert from strings to numbers
+
+//equality operators
+const age = 18;
+if (age === 18) console.log("you just became an adult");
+// always use strict equality operator === JS does not perform type coercion on this
+// avoid loose equality operator == JS does perform type coercion  so '19' == 19
+//would be true
+
+const favorite = Number(prompt("Guess the number between 1-30."));
+console.log(typeof favorite);
+if (favorite === 23) {
+  console.log("You guessed it!");
+} else if (favorite === 7) {
+  console.log("You guessed it!");
+} else {
+  console.log("Sorry. Try again.");
+}
+
+if (favorite !== 23) {
+  console.log("Try number 23.");
+}
